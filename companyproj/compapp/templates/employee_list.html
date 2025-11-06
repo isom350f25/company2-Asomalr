@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Employee List</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        h1 { color: #333; }
+        ul { list-style-type: none; padding: 0; }
+        li { margin: 10px 0; padding: 8px; background-color: #f4f4f4; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Employee List (Alphabetical)</h1>
+    <ul>
+        {% for employee in employees %}
+            <li>
+                <strong>{{ employee.name }}</strong><br>
+                Position: {{ employee.position }}<br>
+                Joined: {{ employee.date_joined }}<br>
+                DOB: {{ employee.date_of_birth }}<br>
+                Phone: {{ employee.phone_number }}
+            </li>
+        {% empty %}
+            <li>No employees found.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
