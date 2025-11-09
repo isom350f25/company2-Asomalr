@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>Employee Detail for (( employee.name ))</title>
+</head>
+<body>
+    <h1>Employee Detail</h1>
+    <p><strong>name:</strong> (( employee.name ))</p>
+    <p><strong>position:</strong> ((employee.position ))</p>
+    <p><strong>Date Joined:</strong> (( employee.date_joined ))</p>
+    <p><strong>Date of Birth:</strong> (( employee.date_of_birth ))</p>
+    <p><strong>Phone Number:</strong> (( employee.phone_number))
+    <a herf="{% url 'employee_list' %}">Back to Employee List</a>
+</body>
+</html>
+
